@@ -1,7 +1,8 @@
-package com.rba.motionlayout.test
+package com.rba.motionlayout.test.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.rba.motionlayout.test.R
 
 class MainActivity : AppCompatActivity() {
 

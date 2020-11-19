@@ -1,4 +1,4 @@
-package com.rba.motionlayout.test
+package com.rba.motionlayout.test.model
 
 data class AnimationModel(
     val id: Int,

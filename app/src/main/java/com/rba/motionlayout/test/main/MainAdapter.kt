@@ -1,4 +1,4 @@
-package com.rba.motionlayout.test
+package com.rba.motionlayout.test.main
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,7 +6,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.rba.motionlayout.test.R
 import com.rba.motionlayout.test.databinding.ItemMainBinding
+import com.rba.motionlayout.test.model.AnimationModel
 
 class MainAdapter(private val itemClick: (animationModel: AnimationModel) -> Unit) :
     ListAdapter<AnimationModel, MainAdapter.ItemViewHolder>(DiffCallback) {
