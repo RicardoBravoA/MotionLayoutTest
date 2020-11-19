@@ -1,7 +1,7 @@
 package com.rba.motionlayout.test
 
-data class Step(
+data class AnimationModel(
     val id: Int,
-    val name: String,
+    val title: String,
     val description: String
 )
