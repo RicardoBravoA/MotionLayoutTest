@@ -23,7 +23,11 @@ class MainAdapter(private val itemClick: (animationModel: AnimationModel) -> Uni
 
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        holder.bind(getItem(position))
+        val animationModel = getItem(position)
+        holder.itemView.setOnClickListener {
+            itemClick(animationModel)
+        }
+        holder.bind(animationModel)
     }
 
     class ItemViewHolder(private var binding: ItemMainBinding) :
