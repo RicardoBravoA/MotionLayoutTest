@@ -42,7 +42,7 @@
             app:layout_constraintEnd_toStartOf="@id/center_star"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/credits" />
+            app:layout_constraintTop_toBottomOf="@id/top_guideline" />
 
         <Constraint
             android:id="@+id/center_star"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toStartOf="@id/right_star"
             app:layout_constraintStart_toEndOf="@id/left_star"
-            app:layout_constraintTop_toBottomOf="@id/credits" />
+            app:layout_constraintTop_toBottomOf="@id/top_guideline" />
 
         <Constraint
             android:id="@+id/right_star"
@@ -59,7 +59,7 @@
             android:alpha="1.0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/center_star"
-            app:layout_constraintTop_toBottomOf="@id/credits" />
+            app:layout_constraintTop_toBottomOf="@id/top_guideline" />
     </ConstraintSet>
 
     <!-- A transition describes an animation via start and end state -->
