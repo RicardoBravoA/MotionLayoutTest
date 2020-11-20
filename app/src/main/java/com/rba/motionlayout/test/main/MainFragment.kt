@@ -1,7 +1,6 @@
 package com.rba.motionlayout.test.main
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -27,13 +26,16 @@ class MainFragment : Fragment() {
     }
 
     private fun onClickItem(animationModel: AnimationModel) {
-        Log.i("z- onClick", animationModel.toString())
-        if (animationModel.id == 1) {
-            findNavController().navigate(MainFragmentDirections.actionMainFragmentToBasicFragment())
-        } else if (animationModel.id == 2) {
-            findNavController().navigate(MainFragmentDirections.actionMainFragmentToDragFragment())
-        } else if (animationModel.id == 3) {
-            findNavController().navigate(MainFragmentDirections.actionMainFragmentToDragFragment())
+        when (animationModel.id) {
+            1 -> {
+                findNavController().navigate(MainFragmentDirections.actionMainFragmentToBasicFragment())
+            }
+            2 -> {
+                findNavController().navigate(MainFragmentDirections.actionMainFragmentToDragFragment())
+            }
+            3 -> {
+                findNavController().navigate(MainFragmentDirections.actionMainFragmentToPathFragment())
+            }
         }
     }
 
