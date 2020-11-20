@@ -6,6 +6,7 @@
     <androidx.constraintlayout.motion.widget.MotionLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:motionDebug="SHOW_PATH"
         app:layoutDescription="@xml/fragment_path_scene">
 
 
