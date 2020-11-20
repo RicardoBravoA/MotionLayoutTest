@@ -16,6 +16,11 @@
             app:destination="@id/BasicFragment"
             app:popUpTo="@id/BasicFragment"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_MainFragment_to_DragFragment"
+            app:destination="@id/DragFragment"
+            app:popUpTo="@id/DragFragment"
+            app:popUpToInclusive="false" />
 
     </fragment>
     <fragment
@@ -25,4 +30,9 @@
         tools:layout="@layout/fragment_basic">
 
     </fragment>
+    <fragment
+        android:id="@+id/DragFragment"
+        android:name="com.rba.motionlayout.test.animations.DragFragment"
+        android:label="@string/drag_fragment_label"
+        tools:layout="@layout/fragment_drag" />
 </navigation>

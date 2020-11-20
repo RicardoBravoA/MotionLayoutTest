@@ -30,6 +30,8 @@ class MainFragment : Fragment() {
         Log.i("z- onClick", animationModel.toString())
         if (animationModel.id == 1) {
             findNavController().navigate(MainFragmentDirections.actionMainFragmentToBasicFragment())
+        } else if (animationModel.id == 2) {
+            findNavController().navigate(MainFragmentDirections.actionMainFragmentToDragFragment())
         }
     }
 
@@ -39,6 +41,12 @@ class MainFragment : Fragment() {
             AnimationModel(
                 1, "Animations with Motion Layout",
                 "Basic animation with Motion Layout."
+            )
+        )
+        list.add(
+            AnimationModel(
+                1, "Animating based on drag events",
+                "Learn how to control animations with drag events.."
             )
         )
         return list

@@ -4,6 +4,7 @@
     <!-- Strings used for fragments for navigation -->
     <string name="main_fragment_label">Main Fragment</string>
     <string name="basic_fragment_label">Basic Fragment</string>
+    <string name="drag_fragment_label">Drag Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="star_image">Star image</string>
