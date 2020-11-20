@@ -45,7 +45,7 @@ class MainFragment : Fragment() {
         )
         list.add(
             AnimationModel(
-                1, "Animating based on drag events",
+                2, "Animating based on drag events",
                 "Learn how to control animations with drag events.."
             )
         )

@@ -9,6 +9,7 @@
         app:layoutDescription="@xml/fragment_drag_scene">
 
         <ImageView
+            android:id="@+id/background_image_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:scaleType="centerCrop"
@@ -25,7 +26,15 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/star"
             app:srcCompat="@drawable/ic_star"
-            app:tint="?attr/colorPrimary" />
+            app:tint="?colorOnPrimary" />
+
+        <ImageView
+            android:id="@+id/center_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/star"
+            app:srcCompat="@drawable/ic_star"
+            app:tint="?colorSecondary" />
 
         <ImageView
             android:id="@+id/right_star"
@@ -33,15 +42,18 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/star"
             app:srcCompat="@drawable/ic_star"
-            app:tint="?attr/colorOnPrimary" />
+            app:tint="?colorOnPrimary" />
 
-        <ImageView
-            android:id="@+id/red_star"
+        <TextView
+            android:id="@+id/credits"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/star"
-            app:srcCompat="@drawable/ic_star"
-            app:tint="?attr/colorSecondary" />
+            android:alpha="0.8"
+            android:padding="16dp"
+            android:text="@string/app_name"
+            android:textColor="?colorOnPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.motion.widget.MotionLayout>
 
