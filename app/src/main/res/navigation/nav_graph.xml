@@ -50,7 +50,7 @@
         tools:layout="@layout/fragment_path" />
     <fragment
         android:id="@+id/ComplexPathFragment"
-        android:name="com.rba.motionlayout.test.animations.PathFragment"
+        android:name="com.rba.motionlayout.test.animations.ComplexPathFragment"
         android:label="@string/complex_path_fragment_label"
         tools:layout="@layout/fragment_complex_path" />
 </navigation>
