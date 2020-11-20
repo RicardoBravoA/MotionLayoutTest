@@ -26,6 +26,11 @@
             app:destination="@id/PathFragment"
             app:popUpTo="@id/PathFragment"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_MainFragment_to_ComplexPathFragment"
+            app:destination="@id/ComplexPathFragment"
+            app:popUpTo="@id/ComplexPathFragment"
+            app:popUpToInclusive="false" />
 
     </fragment>
     <fragment
@@ -43,4 +48,9 @@
         android:name="com.rba.motionlayout.test.animations.PathFragment"
         android:label="@string/path_fragment_label"
         tools:layout="@layout/fragment_path" />
+    <fragment
+        android:id="@+id/ComplexPathFragment"
+        android:name="com.rba.motionlayout.test.animations.PathFragment"
+        android:label="@string/complex_path_fragment_label"
+        tools:layout="@layout/fragment_complex_path" />
 </navigation>

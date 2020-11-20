@@ -36,6 +36,9 @@ class MainFragment : Fragment() {
             3 -> {
                 findNavController().navigate(MainFragmentDirections.actionMainFragmentToPathFragment())
             }
+            4 -> {
+                findNavController().navigate(MainFragmentDirections.actionMainFragmentToComplexPathFragment())
+            }
         }
     }
 
@@ -57,6 +60,12 @@ class MainFragment : Fragment() {
             AnimationModel(
                 3, "Modifying a path",
                 "Learn how to use KeyFrames to modify a path between start and end."
+            )
+        )
+        list.add(
+            AnimationModel(
+                4, "Building complex paths",
+                "Learn how to use KeyFrames to build complex paths through multiple KeyFrames."
             )
         )
         return list
