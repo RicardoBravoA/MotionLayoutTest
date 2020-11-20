@@ -6,18 +6,42 @@
     <androidx.constraintlayout.motion.widget.MotionLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="8dp"
-        tools:context=".animations.BasicFragment"
-        app:layoutDescription="@xml/fragment_basic_scene">
+        app:layoutDescription="@xml/fragment_drag_scene">
 
         <ImageView
-            android:id="@+id/star_image_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_background" />
+
+
+        <ImageView
+            android:id="@+id/left_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/star_image"
-            android:src="@drawable/ic_star"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:contentDescription="@string/star"
+            app:srcCompat="@drawable/ic_star"
+            app:tint="?attr/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/right_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/star"
+            app:srcCompat="@drawable/ic_star"
+            app:tint="?attr/colorOnPrimary" />
+
+        <ImageView
+            android:id="@+id/red_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/star"
+            app:srcCompat="@drawable/ic_star"
+            app:tint="?attr/colorSecondary" />
 
     </androidx.constraintlayout.motion.widget.MotionLayout>
 
