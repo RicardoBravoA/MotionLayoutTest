@@ -32,6 +32,8 @@ class MainFragment : Fragment() {
             findNavController().navigate(MainFragmentDirections.actionMainFragmentToBasicFragment())
         } else if (animationModel.id == 2) {
             findNavController().navigate(MainFragmentDirections.actionMainFragmentToDragFragment())
+        } else if (animationModel.id == 3) {
+            findNavController().navigate(MainFragmentDirections.actionMainFragmentToDragFragment())
         }
     }
 
@@ -46,7 +48,13 @@ class MainFragment : Fragment() {
         list.add(
             AnimationModel(
                 2, "Animating based on drag events",
-                "Learn how to control animations with drag events.."
+                "Learn how to control animations with drag events."
+            )
+        )
+        list.add(
+            AnimationModel(
+                3, "Modifying a path",
+                "Learn how to use KeyFrames to modify a path between start and end."
             )
         )
         return list

@@ -21,18 +21,26 @@
             app:destination="@id/DragFragment"
             app:popUpTo="@id/DragFragment"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_MainFragment_to_PathFragment"
+            app:destination="@id/PathFragment"
+            app:popUpTo="@id/PathFragment"
+            app:popUpToInclusive="false" />
 
     </fragment>
     <fragment
         android:id="@+id/BasicFragment"
         android:name="com.rba.motionlayout.test.animations.BasicFragment"
         android:label="@string/basic_fragment_label"
-        tools:layout="@layout/fragment_basic">
-
-    </fragment>
+        tools:layout="@layout/fragment_basic" />
     <fragment
         android:id="@+id/DragFragment"
         android:name="com.rba.motionlayout.test.animations.DragFragment"
         android:label="@string/drag_fragment_label"
         tools:layout="@layout/fragment_drag" />
+    <fragment
+        android:id="@+id/PathFragment"
+        android:name="com.rba.motionlayout.test.animations.PathFragment"
+        android:label="@string/path_fragment_label"
+        tools:layout="@layout/fragment_path" />
 </navigation>
