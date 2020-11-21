@@ -36,6 +36,11 @@
             app:destination="@id/ChangeAttributesFragment"
             app:popUpTo="@id/ChangeAttributesFragment"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_MainFragment_to_CustomAttributesFragment"
+            app:destination="@id/CustomAttributesFragment"
+            app:popUpTo="@id/CustomAttributesFragment"
+            app:popUpToInclusive="false" />
 
     </fragment>
     <fragment
@@ -63,4 +68,9 @@
         android:name="com.rba.motionlayout.test.animations.ChangeAttributesFragment"
         android:label="@string/change_attributes_fragment_label"
         tools:layout="@layout/fragment_change_attributes" />
+    <fragment
+        android:id="@+id/CustomAttributesFragment"
+        android:name="com.rba.motionlayout.test.animations.CustomAttributesFragment"
+        android:label="@string/custom_attributes_fragment_label"
+        tools:layout="@layout/fragment_custom_attributes" />
 </navigation>

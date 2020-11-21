@@ -42,6 +42,9 @@ class MainFragment : Fragment() {
             5 -> {
                 findNavController().navigate(MainFragmentDirections.actionMainFragmentToChangeAttributesFragment())
             }
+            6 -> {
+                findNavController().navigate(MainFragmentDirections.actionMainFragmentToCustomAttributesFragment())
+            }
         }
     }
 
@@ -75,6 +78,12 @@ class MainFragment : Fragment() {
             AnimationModel(
                 5, "Changing attributes with motion",
                 "Learn how to resize and rotate views during animations."
+            )
+        )
+        list.add(
+            AnimationModel(
+                5, "Changing custom attributes",
+                "Learn how to change custom attributes during motion."
             )
         )
         return list
