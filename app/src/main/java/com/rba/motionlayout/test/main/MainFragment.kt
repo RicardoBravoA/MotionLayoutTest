@@ -39,6 +39,9 @@ class MainFragment : Fragment() {
             4 -> {
                 findNavController().navigate(MainFragmentDirections.actionMainFragmentToComplexPathFragment())
             }
+            5 -> {
+                findNavController().navigate(MainFragmentDirections.actionMainFragmentToChangeAttributesFragment())
+            }
         }
     }
 
@@ -66,6 +69,12 @@ class MainFragment : Fragment() {
             AnimationModel(
                 4, "Building complex paths",
                 "Learn how to use KeyFrames to build complex paths through multiple KeyFrames."
+            )
+        )
+        list.add(
+            AnimationModel(
+                5, "Changing attributes with motion",
+                "Learn how to resize and rotate views during animations."
             )
         )
         return list
