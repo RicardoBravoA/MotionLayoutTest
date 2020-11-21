@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.google.android.material.appbar.AppBarLayout
 import com.rba.motionlayout.test.databinding.FragmentCollapsingToolbarBinding
 
 class CollapsingToolbarFragment : Fragment() {
@@ -15,7 +16,12 @@ class CollapsingToolbarFragment : Fragment() {
     ): View? {
         val binding: FragmentCollapsingToolbarBinding =
             FragmentCollapsingToolbarBinding.inflate(LayoutInflater.from(container?.context))
+
+        binding.appbarLayout.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { _, verticalOffset ->
+            val seekPosition = -verticalOffset / binding.appbarLayout.totalScrollRange.toFloat()
+            binding.motionLayout.progress = seekPosition
+        })
+
         return binding.root
     }
-
 }
