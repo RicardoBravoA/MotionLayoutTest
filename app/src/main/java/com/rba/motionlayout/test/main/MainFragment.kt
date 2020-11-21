@@ -82,7 +82,7 @@ class MainFragment : Fragment() {
         )
         list.add(
             AnimationModel(
-                5, "Changing custom attributes",
+                6, "Changing custom attributes",
                 "Learn how to change custom attributes during motion."
             )
         )

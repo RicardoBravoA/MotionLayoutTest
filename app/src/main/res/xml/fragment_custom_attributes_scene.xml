@@ -82,6 +82,32 @@
                 app:framePosition="85"
                 app:motionTarget="@id/text" />
 
+            <KeyAttribute
+                android:alpha="0.0"
+                app:framePosition="85"
+                app:motionTarget="@id/text" />
+            <KeyAttribute
+                app:framePosition="0"
+                app:motionTarget="@id/moon_image_view">
+                <CustomAttribute
+                    app:attributeName="colorFilter"
+                    app:customColorValue="@color/white" />
+            </KeyAttribute>
+            <KeyAttribute
+                app:framePosition="50"
+                app:motionTarget="@id/moon_image_view">
+                <CustomAttribute
+                    app:attributeName="colorFilter"
+                    app:customColorValue="@color/moon_color" />
+            </KeyAttribute>
+            <KeyAttribute
+                app:framePosition="100"
+                app:motionTarget="@id/moon_image_view">
+                <CustomAttribute
+                    app:attributeName="colorFilter"
+                    app:customColorValue="@color/white" />
+            </KeyAttribute>
+
         </KeyFrameSet>
     </Transition>
 
