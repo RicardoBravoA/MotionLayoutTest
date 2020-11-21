@@ -25,8 +25,9 @@
     <ConstraintSet android:id="@+id/end">
         <Constraint
             android:id="@id/moon_image_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
         <Constraint
@@ -43,12 +44,7 @@
     <!-- A transition describes an animation via start and end state -->
     <Transition
         app:constraintSetEnd="@+id/end"
-        app:constraintSetStart="@+id/start"
-        app:duration="3000">
-        <OnSwipe
-            app:dragDirection="dragRight"
-            app:touchAnchorId="@id/moon_image_view"
-            app:touchAnchorSide="bottom" />
+        app:constraintSetStart="@+id/start">
 
         <KeyFrameSet>
             <KeyPosition
@@ -69,40 +65,19 @@
 
             <!-- KeyAttributes modify attributes during motion -->
             <KeyAttribute
-                android:rotation="-360"
-                android:scaleX="2.0"
-                android:scaleY="2.0"
                 app:framePosition="50"
                 app:motionTarget="@id/moon_image_view" />
             <KeyAttribute
-                android:rotation="-720"
                 app:framePosition="100"
                 app:motionTarget="@id/moon_image_view" />
-            <KeyAttribute
-                app:framePosition="0"
-                app:motionTarget="@id/moon_image_view">
-                <CustomAttribute
-                    app:attributeName="colorFilter"
-                    app:customColorValue="@color/white" />
-            </KeyAttribute>
-            <KeyAttribute
-                app:framePosition="50"
-                app:motionTarget="@id/moon_image_view">
-                <CustomAttribute
-                    app:attributeName="colorFilter"
-                    app:customColorValue="@color/moon_color" />
-            </KeyAttribute>
-            <KeyAttribute
-                app:framePosition="100"
-                app:motionTarget="@id/moon_image_view">
-                <CustomAttribute
-                    app:attributeName="colorFilter"
-                    app:customColorValue="@color/white" />
-            </KeyAttribute>
             <KeyAttribute
                 android:alpha="0.0"
                 app:framePosition="85"
                 app:motionTarget="@id/text" />
+            <KeyAttribute
+                android:translationY="500dp"
+                app:framePosition="100"
+                app:motionTarget="@id/background_image_view" />
 
         </KeyFrameSet>
     </Transition>

@@ -21,9 +21,8 @@
                 app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed"
                 app:motionDebug="SHOW_PATH">
 
-
                 <ImageView
-                    android:id="@+id/background"
+                    android:id="@+id/background_image_view"
                     android:layout_width="0dp"
                     android:layout_height="1000dp"
                     android:scaleType="centerCrop"
@@ -35,7 +34,7 @@
 
 
                 <ImageView
-                    android:id="@+id/moon"
+                    android:id="@+id/moon_image_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/ic_moon"
