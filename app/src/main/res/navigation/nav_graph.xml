@@ -41,6 +41,11 @@
             app:destination="@id/CustomAttributesFragment"
             app:popUpTo="@id/CustomAttributesFragment"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_MainFragment_to_dragComplexPathFragment"
+            app:destination="@id/DragComplexPathFragment"
+            app:popUpTo="@id/DragComplexPathFragment"
+            app:popUpToInclusive="false" />
 
     </fragment>
     <fragment
@@ -73,4 +78,9 @@
         android:name="com.rba.motionlayout.test.animations.CustomAttributesFragment"
         android:label="@string/custom_attributes_fragment_label"
         tools:layout="@layout/fragment_custom_attributes" />
+    <fragment
+        android:id="@+id/DragComplexPathFragment"
+        android:name="com.rba.motionlayout.test.animations.DragComplexPathFragment"
+        android:label="@string/drag_complex_fragment_label"
+        tools:layout="@layout/fragment_drag_complex_path" />
 </navigation>

@@ -45,6 +45,9 @@ class MainFragment : Fragment() {
             6 -> {
                 findNavController().navigate(MainFragmentDirections.actionMainFragmentToCustomAttributesFragment())
             }
+            7 -> {
+                findNavController().navigate(MainFragmentDirections.actionMainFragmentToDragComplexPathFragment())
+            }
         }
     }
 
@@ -84,6 +87,12 @@ class MainFragment : Fragment() {
             AnimationModel(
                 6, "Changing custom attributes",
                 "Learn how to change custom attributes during motion."
+            )
+        )
+        list.add(
+            AnimationModel(
+                7, "OnSwipe with complex paths",
+                "Learn how to control motion through complex paths with OnSwipe."
             )
         )
         return list
