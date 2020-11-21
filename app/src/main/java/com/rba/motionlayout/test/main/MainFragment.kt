@@ -48,6 +48,9 @@ class MainFragment : Fragment() {
             7 -> {
                 findNavController().navigate(MainFragmentDirections.actionMainFragmentToDragComplexPathFragment())
             }
+            8 -> {
+                findNavController().navigate(MainFragmentDirections.actionMainFragmentToCollapsingToolbarFragment())
+            }
         }
     }
 
@@ -93,6 +96,12 @@ class MainFragment : Fragment() {
             AnimationModel(
                 7, "OnSwipe with complex paths",
                 "Learn how to control motion through complex paths with OnSwipe."
+            )
+        )
+        list.add(
+            AnimationModel(
+                8, "Running motion with code",
+                "Learn how to use MotionLayout to build complex collapsing toolbar animations."
             )
         )
         return list

@@ -10,6 +10,7 @@
     <string name="change_attributes_fragment_label">Change Attributes Fragment</string>
     <string name="custom_attributes_fragment_label">Custom Attributes Fragment</string>
     <string name="drag_complex_fragment_label">Drag Complex Fragment</string>
+    <string name="collapsing_toolbar_fragment_label">Collapsing Toolbar Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="star_image">Star image</string>

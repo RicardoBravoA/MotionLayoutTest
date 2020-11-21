@@ -46,6 +46,11 @@
             app:destination="@id/DragComplexPathFragment"
             app:popUpTo="@id/DragComplexPathFragment"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_MainFragment_to_collapsingToolbarFragment"
+            app:destination="@id/CollapsingToolbarFragment"
+            app:popUpTo="@id/CollapsingToolbarFragment"
+            app:popUpToInclusive="false" />
 
     </fragment>
     <fragment
@@ -83,4 +88,9 @@
         android:name="com.rba.motionlayout.test.animations.DragComplexPathFragment"
         android:label="@string/drag_complex_fragment_label"
         tools:layout="@layout/fragment_drag_complex_path" />
+    <fragment
+        android:id="@+id/CollapsingToolbarFragment"
+        android:name="com.rba.motionlayout.test.animations.CollapsingToolbarFragment"
+        android:label="@string/collapsing_toolbar_fragment_label"
+        tools:layout="@layout/fragment_collapsing_toolbar" />
 </navigation>
